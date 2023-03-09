@@ -1,11 +1,11 @@
 /*
-TODO: Adjust color scheme
+TODO: Add animations once Arwin learns them.
 
 */
 
 ::selection {
   color: black;
-  background: #bee9e8;
+  background: #ff6550;
 }
 
 body {
@@ -25,11 +25,7 @@ a {
 }
 
 body > * {
-  background-color: #5fa8d3;
-}
-
-div {
-  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  background-color: #566270;
 }
 
 header {
@@ -55,10 +51,8 @@ ul {
 
   font-family: 'Noto Sans', sans-serif;
   font-size: 1rem;
-  background-color: #1b4965;
-  color: #cae9ff;
-
-  border-right: 2px solid #1b4965;
+  background-color: #7b8898;
+  color: #ffffff;
 
   display: grid;
   grid: 100px 1fr 1fr / 1fr;
@@ -69,6 +63,8 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 5px;
+
+  color: #d3e8f7;
   text-shadow: 1px 1px rgba(190, 233, 232, 0.4);
 }
 
@@ -98,8 +94,26 @@ ul {
 }
 
 .nav a:hover {
-  color: #5fa8d3;
+  color: #c5d2e0;
 }
+
+.self-destruct-wrapper {
+  position: relative;
+}
+
+.new-banner {
+  position: absolute;
+  left: 100px;
+  top: 0.5rem;
+  padding: 0.1rem;
+  background-color: #ff6550;
+  line-height: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
 /* Sidebar end */
 
 header {
@@ -122,21 +136,40 @@ header {
   display: grid;
   grid-template-rows: min-content 1fr;
 
-  border: 1px solid rgb(255, 0, 0);
+  padding: 10px 10px;
+  /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.projects h2 {
+  color: #d3e8f7;
 }
 
 .cards {
   display: grid;
 
   /* grid-template-columns: repeat(5, clamp(150px, 20%, 200px)); */
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, 250px);
+  gap: 10px;
 }
 
 .card {
   font-size: 0.8rem;
 
-  border: 1px solid yellow;
+  color: #ffffff;
+  background-color: #75808d;
+
+  padding: 10px 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  border-left: 2px solid #ff6550;
 }
+
+.actions {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
 /* Projects end */
 
 .announcements {
