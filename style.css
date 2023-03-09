@@ -4,6 +4,11 @@ TODO: Make links clickable
 
 */
 
+::selection {
+  color: black;
+  background: #bee9e8;
+}
+
 body {
   height: 100vh;
   margin: 0;
