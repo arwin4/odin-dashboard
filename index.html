@@ -19,15 +19,41 @@
   </head>
   <body>
     <header>
-      <div class="top-row">
-        <iconify-icon icon="ic:search" style="color: #ffffff"></iconify-icon>
-        <input />
+      <div class="header-top-row">
+        <iconify-icon
+          icon="ic:search"
+          height="30"
+          style="color: #cfd9e4"
+          class="search-icon"
+        ></iconify-icon>
+        <input class="search-bar" />
         <iconify-icon
           icon="mdi:bell-badge-outline"
-          style="color: #ffffff"
+          height="28"
+          style="color: #cfd9e4"
+          class="notification-icon"
         ></iconify-icon>
+        <img
+          src="/assets/shovelknight.png"
+          alt="User icon portraying Shovel Knight"
+        />
+        <h4 class="username">Shovel Knight</h4>
       </div>
-      <div class="bottom-row"></div>
+      <div class="header-bottom-row">
+        <img
+          src="/assets/shovelknight-big.png"
+          alt="User icon portraying Shovel Knight"
+        />
+        <div class="welcome-message">
+          <h4>Welcome back,</h4>
+          <h2>Shovel Knight!</h2>
+        </div>
+        <div class="header-buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Get digging</button>
+        </div>
+      </div>
     </header>
 
     <div class="sidebar">

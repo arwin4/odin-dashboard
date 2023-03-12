@@ -30,10 +30,6 @@ body > * {
   background-color: #566270;
 }
 
-header {
-  /* border: 1px solid rgba(0, 0, 0, 0.3); */
-}
-
 /* Lists start */
 ul {
   list-style: none;
@@ -46,6 +42,108 @@ ul {
   margin-right: 10px;
 }
 /* Lists end */
+
+/* Header start */
+.header-top-row,
+.header-bottom-row {
+  display: grid;
+  align-items: center;
+
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 20px;
+
+  color: #cfd9e4;
+}
+
+/* Header top row start */
+.header-top-row {
+  grid-template-columns: 50px minmax(200px, 2fr) 1fr;
+  justify-content: space-between;
+  grid-auto-flow: column;
+
+  gap: 20px;
+}
+
+.search-icon,
+.notification-icon {
+  justify-self: end;
+}
+
+.search-bar {
+  height: 30px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #566270;
+  caret-color: #7b8898;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  border-radius: 42px;
+  border-style: none;
+}
+
+.search-bar:focus {
+  outline: solid 2px #ff6550;
+  background-color: #cfd9e4;
+}
+
+.header-top-row img {
+  background-color: #d3e8f7;
+  height: 70%;
+  justify-self: center;
+  border: 2px solid #ff6550;
+  border-radius: 20%;
+}
+/* Header top row end */
+
+/* Header bottom row start */
+.header-bottom-row {
+  grid-auto-flow: column;
+  grid-template-columns: 100px 1fr 500px;
+}
+.header-bottom-row img {
+  padding-left: 15px;
+}
+
+.welcome-message {
+  position: relative;
+  padding-left: 20px;
+}
+
+.welcome-message h4 {
+  position: absolute;
+  bottom: 25px;
+}
+
+.header-buttons {
+  justify-self: end;
+}
+
+.header-buttons > button {
+  width: 140px;
+  height: 42px;
+  background-color: #6081c9;
+
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  border: 1px solid #314179;
+  border-radius: 6px;
+}
+
+.header-buttons > button:hover {
+  background-color: #728cc5;
+  cursor: pointer;
+}
+
+.header-buttons > button:active {
+  background-color: #84a1df;
+}
+/* -Header bottom row end */
+/* Header end */
 
 /* Sidebar start */
 .sidebar {
@@ -144,12 +242,10 @@ header {
 
 /* Projects start */
 .projects {
-  grid-area: projects;
-
   display: grid;
   grid-template-rows: min-content 1fr;
 
-  padding: 10px 10px;
+  padding: 0px 10px;
   /* border: 1px solid rgb(255, 0, 0); */
 }
 
@@ -192,7 +288,6 @@ header {
   justify-content: right;
   gap: 5px;
 }
-
 /* Projects end */
 
 .announcements {
