@@ -106,14 +106,25 @@ ul {
 .new-banner {
   position: absolute;
   left: 100px;
-  top: 0.5rem;
-  padding: 0.1rem;
+  top: 7px;
+
   background-color: #ff6550;
   line-height: 0.8rem;
   font-size: 0.7rem;
   font-weight: bold;
+
+  padding: 2px;
+  padding-right: 4px;
+  padding-bottom: 3px;
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 4px;
+  border-top-right-radius: 10px;
+}
+
+.new-sprite {
+  position: absolute;
+  left: 128px;
+  top: -2px;
 }
 
 /* Sidebar end */
