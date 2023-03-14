@@ -95,7 +95,7 @@ ul {
 /* Header bottom row start */
 .header-bottom-row {
   grid-area: 2 / 2 / 3 / 3;
-  grid-template-columns: 100px 200px 1fr;
+  grid-template-columns: 100px 200px minmax(max-content, 1fr);
 }
 
 .header-bottom-row img {
