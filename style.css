@@ -215,7 +215,7 @@ ul {
 /* Sidebar end */
 
 .projects h2,
-.right-sidebar h2 {
+.right-column h2 {
   color: #d3e8f7;
 }
 
@@ -257,7 +257,7 @@ ul {
 }
 /* Projects end */
 
-.right-sidebar {
+.right-column {
   display: grid;
   grid-area: 2 / 3 / 5 / 4;
   padding-right: 10px;
